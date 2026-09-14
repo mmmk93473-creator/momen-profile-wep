@@ -67,14 +67,14 @@ export const Header: React.FC<HeaderProps> = ({ onStartProject }) => {
         <a
           href="#home"
           onClick={(e) => scrollToSection(e, '#home')}
-          className="flex items-center gap-1 text-xl md:text-2xl font-bold tracking-wider font-heading text-white group"
+          className="flex items-center gap-1.5 text-xl md:text-2xl font-bold tracking-wider font-heading text-white group"
         >
-          <span>MOMEN</span>
+          <span>MOAMEN</span>
           <span className="inline-block w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_#00f0ff] group-hover:scale-125 transition-transform duration-300" />
         </a>
 
         {/* Center: Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-1 bg-[#090e1a]/70 border border-cyan-500/15 backdrop-blur-md px-4 py-1.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+        <nav className="hidden lg:flex items-center gap-1 bg-[#090e1a]/70 border border-cyan-500/15 backdrop-blur-md px-4 py-1.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
@@ -100,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({ onStartProject }) => {
         </nav>
 
         {/* Right: CTA Magnetic Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <MagneticButton
             variant="secondary"
             className="text-xs uppercase tracking-wider py-2.5 px-5 !rounded-full text-slate-200 border-cyan-500/30 hover:border-cyan-400"
@@ -114,18 +114,18 @@ export const Header: React.FC<HeaderProps> = ({ onStartProject }) => {
           </MagneticButton>
         </div>
 
-        {/* Mobile Hamburger Toggle */}
+        {/* Mobile / Tablet Hamburger Toggle */}
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 text-slate-300 hover:text-cyan-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-cyan-400"
+          className="lg:hidden p-2 text-slate-300 hover:text-cyan-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-cyan-400"
           aria-label="Toggle navigation menu"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile / Tablet Drawer */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -133,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({ onStartProject }) => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#070b14]/95 backdrop-blur-2xl border-b border-cyan-500/20 px-6 py-6 overflow-hidden"
+            className="lg:hidden bg-[#070b14]/95 backdrop-blur-2xl border-b border-cyan-500/20 px-6 py-6 overflow-hidden"
           >
             <div className="flex flex-col gap-4">
               {navItems.map((item) => {

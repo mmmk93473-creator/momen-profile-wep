@@ -91,6 +91,47 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.5), transparent);
 }
 
+/* Horizontal Moving Marquee */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 24s linear infinite;
+  will-change: transform;
+}
+
+/* Body Crossing Masking for Marquee Text */
+.marquee-solid-mask {
+  -webkit-mask-image: radial-gradient(ellipse 420px 320px at 50% 50%, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.8) 75%, rgba(0,0,0,1) 100%);
+  mask-image: radial-gradient(ellipse 420px 320px at 50% 50%, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.8) 75%, rgba(0,0,0,1) 100%);
+}
+
+.marquee-body-reveal {
+  -webkit-mask-image: radial-gradient(ellipse 440px 340px at 50% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(ellipse 440px 340px at 50% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0) 100%);
+}
+
+/* Holographic glass utility */
+.holo-panel {
+  background: linear-gradient(135deg, rgba(8, 16, 32, 0.75) 0%, rgba(4, 9, 20, 0.85) 100%);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 240, 255, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.holo-glow {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.45);
+}
+
 /* Accessibility: respect user prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {

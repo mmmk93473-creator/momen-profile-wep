@@ -38,7 +38,7 @@ export const About: React.FC = () => {
             </span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-            I'M MOMEN
+            I'M MOAMEN
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl font-mono">
             // Creative Technologist, 3D Web Designer &amp; Automation Engineer
@@ -61,7 +61,7 @@ export const About: React.FC = () => {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden aspect-[4/5] bg-black">
                 <img
                   src="/assets/momen_studio_showcase.png"
-                  alt="Momen in Creative Tech Studio"
+                  alt="Moamen in Creative Tech Studio"
                   className="w-full h-full object-cover object-center filter contrast-[1.04] group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#080e1b] via-transparent to-transparent pointer-events-none" />
@@ -158,7 +158,7 @@ export const About: React.FC = () => {
                 <div className="rounded-xl bg-[#070c17] border border-cyan-500/20 p-4 font-mono text-xs text-slate-300 shadow-inner">
                   <div className="flex items-center gap-2 pb-2 mb-2 border-b border-white/5 text-slate-500 text-[10px]">
                     <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>momen@station:~$ profile --skills</span>
+                    <span>moamen@station:~$ profile --skills</span>
                   </div>
                   <div className="space-y-1 text-slate-400">
                     <p className="text-emerald-400">✓ AI-native architecture loaded</p>

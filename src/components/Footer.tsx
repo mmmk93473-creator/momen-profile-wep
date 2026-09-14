@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
         {/* Left: Brand & Availability Status */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-heading font-bold text-base text-white tracking-wider">MOMEN</span>
+            <span className="font-heading font-bold text-base text-white tracking-wider">MOAMEN</span>
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]" />
           </div>
           <span className="hidden sm:inline text-slate-600">|</span>
@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
 
         {/* Right: Copyright & Back to Top */}
         <div className="flex items-center gap-6">
-          <span>© {new Date().getFullYear()} Momen. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} MOAMEN. All rights reserved.</span>
           <button
             type="button"
             onClick={scrollToTop}

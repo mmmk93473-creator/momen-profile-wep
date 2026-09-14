@@ -154,7 +154,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
           {/* Modal Footer Actions */}
           <div className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
             <span className="text-xs text-slate-500 font-mono">
-              Designed &amp; Built by Momen
+              Designed &amp; Built by Moamen
             </span>
             <div className="flex items-center gap-3">
               <MagneticButton
