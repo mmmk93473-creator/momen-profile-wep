@@ -93,3 +93,4 @@ export const FloatingIcon: React.FC<FloatingIconProps> = ({
 };
 
 export default FloatingIcon;
+

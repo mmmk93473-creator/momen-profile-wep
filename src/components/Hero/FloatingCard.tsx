@@ -180,3 +180,4 @@ export const WireframeSphere: React.FC<WireframeSphereProps> = ({
     </motion.div>
   );
 };
+
